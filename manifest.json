@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+ 
+  "name": "FHS Teachers",
+  "description": "Teacher Productivity Extension",
+  "author": "Mike Berago",
+  "version": "4.3",
+  "icons": {
+  	"128": "icon_128.png"
+  },
+ 
+  "browser_action": {
+   "default_icon": "icon_128.png",
+   "default_popup": "index.html"
+  },
+  "permissions": [
+  	"activeTab"
+  ]
+  
+}

@@ -1,0 +1,104 @@
+<!--
+
+	This is the page that will render as your extension when the user clicks on the icon.
+	Be sure to download the JQueryUI and JQuery files and loaded into your folder.
+
+	This is the document that is tied to the manifest.json file so if you change the title
+	of this file, you have to change it in the manifest.json file also otherwise it will not work.
+
+	Please refer to the site below for detailed documentation about building, testing and publishing
+	Chrome extensions.
+	https://developer.chrome.com/extensions/getstarted
+
+
+-->
+
+<!doctype html>
+
+<html>
+    <head>
+        <title>FHS Teacher Extension</title>
+        <meta name="author" content="Mike Berago" />
+        <meta name="version" content="4.3" />
+        <link href="stylesheet.css" type="text/css" rel='stylesheet'/>
+        <link href="jqueryui.css" type="text/css" rel='stylesheet'/>
+        <script src="jquery.js"></script>
+        <script src="jqueryui.js"></script>
+        
+    </head>
+    <body>
+    	<div id="header">
+    		<a href="http://www.fenton100.org" target="_blank"><img src="icon_128.png" /></a>
+    	</div>
+		<div id="tabs">
+		  <ul>
+			<li><a href="#tabs-1">Links</a></li>
+			<li><a href="#tabs-2">Bell Schedules</a></li>
+			<li><a href="#tabs-3">Apps</a></li>
+			<li><a href="#tabs-4">Directory</a></li>
+		  </ul>
+		  <!--
+
+			This is the first tab that will be populated by the function in the ajax.js file for the LINKS
+		  
+		  -->
+		  <div id="tabs-1">
+			<div id='table'></div>
+			<br>
+			<hr>
+			<br>
+			<h1 id='bison'>GO BISON</h1>
+		  </div>
+		  <!--
+
+			This is the schedule tab
+		  
+		  -->
+		  <div id="tabs-2">
+			<ul>
+				<li><a href='#tabs-21'>M-W-TH-F</a></li>
+				<li><a href='#tabs-22'>Tuesday</a></li>
+				<li><a href='#tabs-23'>12:08</a></li>
+				<li><a href='#tabs-24'>Late Start</a></li>
+			</ul>
+			<div id='tabs-21'><b>M-W-TH-F</b><br><img src="/images/MWTHF.png" /></div>
+			<div id='tabs-22'><b>Tuesday</b><br><img src="/images/Tuesday.png" /></div>
+			<div id='tabs-23'><b>12:08</b><br><img src="/images/1208.png" /></div>
+			<div id='tabs-24'><b>Late Start</b><br><img src="/images/latestart.png" /></div>
+			
+		  </div>
+		  <!--
+
+			This is the third tab that will be populated by the function in the ajax.js file for the Apps
+		  
+		  -->
+		  <div id="tabs-3">
+			<div id="table2"></div>
+		  </div>
+		  <!--
+		
+			This is the directory search tab
+		
+		  -->
+		  <div id="tabs-4">
+			<div id='searcharea'>
+			<input type='search' name='search' id='search' placeholder='First | Last | RM#'/>
+		</div>
+		
+		<div id='update'></div>
+		  </div>
+		</div>
+    
+    
+    
+	<!--
+
+		Below are the scripts that will load after the page has rendered.
+		They are the scrips that are pulling data from your spreadsheets.
+
+	-->
+    <script src="script.js"></script>
+    <script src="ajax.js"></script>
+    </body> 
+    
+</html>

@@ -1,0 +1,136 @@
+body{
+	height: 500px;
+	width: 400px;
+}
+
+#header {
+	text-align: center;
+	width: 99%;
+	border: 1px solid #ccc;
+	margin-bottom: 5px;
+	padding: 2px;
+	border-radius: 5px;
+}
+
+#header img {
+	height: 100px;
+	width: 125px;
+	border-radius: 15px;
+	
+	/*-moz-box-shadow:    2px 5px 20px 5px #ccc;
+  	-webkit-box-shadow: 2px 5px 20px 5px #ccc;
+  	box-shadow:         2px 5px 20px 5px #ccc;*/
+  	}
+  	
+ body #apps {
+ 	margin: 0 auto;
+ 	border-spacing: 10px;
+ }
+
+.rowlinks {
+	padding: 10px;
+}
+
+table{
+	border-spacing: 5px;
+}
+
+#tabs-1 {
+	height: 300px;
+	margin: 0 auto;
+}
+
+#open {
+	text-decoration: none;
+	margin: 0px auto;
+}
+
+#bison {
+	font-family: "Times New Roman", Times, serif;
+	text-align: center;
+	color: orange;
+	letter-spacing: 4px;
+}
+
+#bison:hover{
+	color: blue;
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	transition-duration: 1s;
+}
+
+.links {
+	height: 10px;
+	margin: 0 auto;
+	text-align: center;
+	
+	background-color: #f0f8ff;
+	padding: 5px;
+	overflow: auto;
+	border-radius: 10px;
+	
+	-moz-box-shadow:    2px 5px 20px 5px #ccc;
+  	-webkit-box-shadow: 2px 5px 20px 5px #ccc;
+  	box-shadow:         2px 5px 20px 5px #ccc;
+}
+
+.links:hover {
+	background-color: orange;
+	
+	-webkit-transition-duration: 2s;
+	-moz-transition-duration: 2s;
+	transition-duration: 2s;
+}
+
+.links a {
+	text-decoration: none/underline;
+	color: red;
+}
+
+.links a:hover {
+	color: white;
+}
+
+.links2 a{
+	text-decoration: none/underline;
+}
+
+.container {
+	text-align: center;
+}
+
+.links2 {
+	color: red;
+}
+
+.links2 img {
+	border-radius: 15px;
+	height: 80px;
+	width: 80px;
+	
+	-moz-box-shadow:    2px 5px 20px 5px #ccc;
+  	-webkit-box-shadow: 2px 5px 20px 5px #ccc;
+  	box-shadow:         2px 5px 20px 5px #ccc;
+}
+
+.links2 img:hover {	
+	-moz-box-shadow:    2px 5px 20px 5px orange;
+  	-webkit-box-shadow: 2px 5px 20px 5px orange;
+  	box-shadow:         2px 5px 20px 5px orange;
+  	
+  	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	transition-duration: 1s;
+}
+
+.searchresults {
+	list-style-type: none;
+}
+
+
+#search {
+	float: right;
+	-moz-box-shadow:    2px 5px 20px 5px #ccc;
+  	-webkit-box-shadow: 2px 5px 20px 5px #ccc;
+  	box-shadow:         2px 5px 20px 5px #ccc;
+}
